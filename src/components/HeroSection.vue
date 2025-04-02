@@ -1,34 +1,31 @@
 <template>
   <HeaderComponent />
-  <div class="hero-section relative h-[100vh] bg-cover bg-center flex flex-col items-center justify-center text-white">
+  <div class="hero-section relative h-[1018px] bg-cover bg-center flex flex-col items-center text-white max-w-[1920px] w-full mx-auto max-md:px-[16px]">
     <div class="text-center z-10 frame-time">
-      <h1 class="text-[60px] font-bold mb-5 font-playfair">{{ $t('comingSoon') }}</h1>
-      <div class="gap-6 mb-4 flex justify-center pb-16">
-        <div class="bg-white rounded-[20px] flex justify-center content-between max-w-[500px]">
+      <h1 class="font-playfair font-black text-[80px] leading-[120px] tracking-[0.6px] text-center mt-[294px] max-md:mt-[92px] max-md:text-[40px]">{{ $t('comingSoon') }}</h1>
+      <div class="gap-6 mb-4 flex justify-center mt-[21px]">
+        <div class="bg-white rounded-[20px] flex justify-center content-between max-w-[756px] max-h-[149.9px] w-full h-full py-[26px] px-[39px]">
           <div v-for="(value, label, index) in timeLeft" :key="label"
-            class="text-black p-4 rounded-md w-35 flex justify-between">
-            <div>
-              <span class="text-5xl font-bold font-playfair">{{ value }}</span>
-              <div class="text-sm capitalize mt-2 font-bold">{{ label }}</div>
-            </div>
-            <div v-if="index < Object.keys(timeLeft).length - 1" class="content-center text-4xl">
-              &#58;
+            class="text-black leading-[64px] tracking-[4.8px] text-center rounded-md flex w-full justify-center">
+            <div class="">
+              <span class="text-[60px] max-md:text-[36px] font-playfair font-bold font-playfair">{{ value }}</span>
+              <div class="capitalize font-montserrat font-bold text-[15.64px] max-md:text-[12px] leading-[100%] tracking-[-0.65px] text-center align-middle">{{ label }}</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-4 flex justify-center">
-        <p class="w-[60%] justify-center des_banner">{{ $t('des_banner') }}</p>
+      <div class="mb-4 mt-[97px]">
+        <p class="w-[60%] text-[18px] max-md:text-[12px] leading-[126%] tracking-[0px] text-center justify-center mx-auto des_banner">{{ $t('des_banner') }}</p>
       </div>
-      <div class="flex items-center border rounded-md overflow-hidden max-w-100 mx-auto">
+      <div class="flex items-center border rounded-md overflow-hidden mt-[32px] max-w-[560px] max-h-[56px] mx-auto">
         <input type="email" :placeholder="$t('text_input')"
-          class="p-2  flex-1 outline-none text-black bg-white placeholder-gray-300">
-        <button class="text-black px-4 h-10 bg-white cursor-pointer">➔</button>
+          class="p-2  flex-1 outline-none text-black bg-white placeholder-gray-300 w-full h-[56px]">
+        <button class="text-black px-4 bg-white cursor-pointer h-[56px]">➔</button>
       </div>
-      <img class="z-2 absolute top-25 left-0 max-w-[550px] h-auto object-cover" src="/images/Fairy.png" alt="">
+      <img class="z-2 absolute top-[100px] left-[-20px] max-w-[890px] w-full max-h-[890px] max-2xl:max-h-[600px] max-2xl:max-w-[600px] max-2xl:top-[400px] h-auto object-cover" src="/images/Fairy.png" alt="Fairy.png">
     </div>
-    <svg class="absolute bottom-[-2px] left-0 w-full z-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-      <path fill="#ffffff" fill-opacity="1" d="M0,0 C360,175 1080,175 1440,0 V220 H0 Z"></path>
+    <svg class="absolute bottom-[-2px] left-0 w-full z-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 350">
+      <path fill="#ffffff" fill-opacity="1" d="M0,170 C400,400 1040,400 1440,170 V650 H0 Z"></path>
     </svg>
   </div>
 </template>
@@ -94,7 +91,7 @@ useHead({
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 70vh;
+    height: 110vh;
   }
 
   .hero-section img {

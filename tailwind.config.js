@@ -10,8 +10,14 @@ module.exports = {
       extend: {
         fontFamily: {
           playfair: ['"Playfair Display"', 'serif'],
+          montserrat: ['"Montserrat"', 'sans-serif']
         }
       },
     },
     plugins: [],
+    purge: {
+      options: {
+        safelist: ['bg-black', 'bg-black/100', 'bg-[rgba(0,0,0,1)]'],
+      },
+    },
   }

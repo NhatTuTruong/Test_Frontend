@@ -6,7 +6,7 @@
     <img 
       :src="isTop ? '/images/icon/arrow-circle-up.png' : '/images/icon/arrow-circle-down.png'" 
       alt="Scroll Icon" 
-      class="w-20 cursor-pointer"
+      class="w-[80px] cursor-pointer"
     />
     </button>
   </template>

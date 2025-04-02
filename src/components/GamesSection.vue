@@ -1,17 +1,17 @@
 
 <template>
-  <div class="our-games pt-10 pb-20">
-    <h2 class="text-center text-5xl font-bold mb-6 text-black font-playfair">{{$t('ourGames')}}</h2>
-    <p class="text-center mb-8  text-[#757575] p-2  max-w-[800px] mx-auto">{{$t('ourGamesDescription')}}</p>
+  <div class="our-games pt-[128px] max-md:pt-[48px] pb-[166px] max-w-[1920px] w-full mx-auto">
+    <h2 class="font-playfair text-[60px] max-md:text-[40px] text-black font-black leading-[60px] tracking-[3.6px] text-center flex items-center justify-center">{{$t('ourGames')}}</h2>
+    <p class="mt-[24.46px] text-[#757575] max-w-[860px] mx-auto font-montserrat text-sm max-md:text-[14px] font-normal leading-[140%] tracking-normal text-center pb-[80px]">{{$t('ourGamesDescription')}}</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-10 max-w-[1440px] mx-auto pb-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-[80px] max-md:px-[16px] max-w-[1920px] w-full mx-auto">
       <div v-for="(game, index) in games" :key="index" 
-           :class="{'relative top-20': index % 4 === 1 || index % 4 === 3}" 
+           :class="{'relative top-[118px]': index % 4 === 1 || index % 4 === 3}" 
            class="relative bg-white rounded-lg overflow-hidden">
-        <div class="h-120 bg-cover bg-center rounded-xl cursor-pointer" :style="{ backgroundImage: `url(${game.image})`, backgroundSize: `cover` }">
-          <div class="bg-opacity-50 w-full h-full flex flex-col justify-end p-8">
-            <h2 class="text-[40px] font-bold text-white text-left">{{ game.title }}</h2>
-            <p class="text-sm text-gray-300 text-left">{{ game.description }}</p>
+        <div class="h-[560px] max-md:h-[268px] bg-cover bg-center rounded-xl cursor-pointer" :style="{ backgroundImage: `url(${game.image})`, backgroundSize: `cover` }">
+          <div class="bg-opacity-50 w-full h-full flex flex-col px-[32px] max-md:px-[8px]">
+            <h2 class="font-montserrat text-[48px] max-md:text-[24px] font-bold leading-[60px] tracking-[-1px] flex items-start text-white pt-[384px] max-md:pt-[80px]">{{ game.title }}</h2>
+            <p class="font-montserrat text-sm max-md:text-[12px] font-normal leading-[140%] tracking-normal flex items-end text-width pt-[16px]">{{ game.description }}</p>
           </div>
         </div>
       </div>

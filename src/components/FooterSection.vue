@@ -1,31 +1,31 @@
 <template>
-  <footer class="footer text-white pt-20">
-    <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 text-left">
+  <footer class="footer text-white max-w-[1920px] w-full mx-auto">
+    <div class="max-w-[1460px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pt-[104px] text-left">
 
       <div class="flex flex-col items-start logo">
-        <img src="/images/White_logo.png" alt="Logo" class="h-20 mb-10">
-        <div class="flex gap-4">
-          <a href="#" class="hover:opacity-75"><img src="/images/icon/tw.png" alt="Twitter" class="h-6"></a>
-          <a href="#" class="hover:opacity-75"><img src="/images/icon/facebook.png" alt="Facebook" class="h-6"></a>
-          <a href="#" class="hover:opacity-75"><img src="/images/icon/in.png" alt="LinkedIn" class="h-6"></a>
+        <img src="/images/White_logo.png" alt="Logo" class="w-[163px] h-auto mb-[40px]">
+        <div class="flex">
+          <a href="#" class="hover:opacity-75"><img src="/images/icon/tw.png" alt="Twitter" class="w-[40px] mr-[24px]"></a>
+          <a href="#" class="hover:opacity-75"><img src="/images/icon/facebook.png" alt="Facebook" class="w-[40px] mr-[24px]"></a>
+          <a href="#" class="hover:opacity-75"><img src="/images/icon/in.png" alt="LinkedIn" class="w-[40px]"></a>
         </div>
       </div>
 
       <div>
-        <h3 class="text-2xl font-bold mb-10">{{$t('address')}}</h3>
-        <div class="flex items-center gap-5 pb-15">
+        <h3 class="font-montserrat text-[24px] font-bold leading-[30px] tracking-normal mb-[40px]">{{$t('address')}}</h3>
+        <div class="flex items-center gap-5 font-montserrat text-sm font-normal leading-[140%] tracking-normal mb-[40px]">
           <img src="/images/icon/Vector8.png" alt="">
           <p>{{$t('addressDetails1')}}<br>{{$t('addressDetails2')}}</p>
         </div>
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 font-montserrat text-sm font-normal leading-[140%] tracking-normal">
           <img src="/images/icon/Vector6.png" alt="">
           <p>{{$t('contactDetails')}}</p>
         </div>
       </div>
 
       <div>
-        <h3 class="text-2xl font-bold mb-10">{{$t('followUs')}}</h3>
-        <p>{{$t('newsletter')}}</p>
+        <h3 class="font-montserrat text-[24px] font-bold leading-[30px] tracking-normal mb-[40px]">{{$t('followUs')}}</h3>
+        <p class="font-montserrat text-sm font-normal leading-[140%] tracking-normal mb-[12px]">{{$t('newsletter')}}</p>
         <div class="flex items-center mt-4 border border-white rounded-lg overflow-hidden">
           <input type="email" placeholder="Email" class="bg-transparent w-full px-4 py-2 text-white outline-none">
           <button class=" text-white px-4 py-2 hover:bg-gray-200 hover:text-black cursor-pointer">

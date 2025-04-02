@@ -35,5 +35,9 @@ import BackToTop from './src/components/BackToTop.vue';
     font-family: 'Playfair Display', serif;
 }
 
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
 
 </style>
